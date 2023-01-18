@@ -1,0 +1,118 @@
+﻿@model Ecommerce.BL.Models.CustomerVM
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="min-height-200px">
+					<div class="page-header">
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<div class="title">
+									<h4>Customer Details</h4>
+								</div>
+								<nav aria-label="breadcrumb" role="navigation">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">
+											<a href="index.html">Home</a>
+										</li>
+										<li class="breadcrumb-item active" aria-current="page">
+											Customer Detail
+										</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="product-wrap">
+						<div class="product-detail-wrap mb-30">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									
+									
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<div class="product-detail-desc pd-20 card-box height-100-p">
+										<div class="row">
+											<div class="mb-20 pt-20 ol-md-6 col-6">
+												<label asp-for="Id"></label>
+											<h4>@Model.Id</h4>
+											</div>
+											
+											<div class="mb-20 pt-20 ol-md-6 col-6">
+												<label asp-for="Name"></label>
+												<h4>@Model.Name</h4>
+											</div>
+										</div>
+										<div class="row">
+											<div class="mb-20 pt-20 ol-md-6 col-6">
+												<label asp-for="Address"></label>
+											<h4>@Model.Address</h4>
+											</div>
+											
+											<div class="mb-20 pt-20 ol-md-6 col-6">
+												<label asp-for="Phone"></label>
+											<h4>@Model.Phone</h4>
+											</div>
+											
+										</div>
+										
+										
+										
+										
+									
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4 class="mb-20">Recent Product</h4>
+						<div class="product-list">
+							<ul class="row">
+								<li class="col-lg-4 col-md-6 col-sm-12">
+									<div class="product-box">
+										<div class="producct-img">
+											<img src="~/vendors/images/product-img1.jpg" alt="" />
+										</div>
+										<div class="product-caption">
+											<h4><a href="#">Gufram Bounce Black</a></h4>
+											<div class="price"><del>$55.5</del><ins>$49.5</ins></div>
+											<a href="#" class="btn btn-outline-primary">Read More</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-lg-4 col-md-6 col-sm-12">
+									<div class="product-box">
+										<div class="producct-img">
+											<img src="~/vendors/images/product-img2.jpg" alt="" />
+										</div>
+										<div class="product-caption">
+											<h4><a href="#">Gufram Bounce White</a></h4>
+											<div class="price"><del>$75.5</del><ins>$50</ins></div>
+											<a href="#" class="btn btn-outline-primary"
+												>Add To Cart</a
+											>
+										</div>
+									</div>
+								</li>
+								<li class="col-lg-4 col-md-6 col-sm-12">
+									<div class="product-box">
+										<div class="producct-img">
+											<img src="~/vendors/images/product-img3.jpg" alt="" />
+										</div>
+										<div class="product-caption">
+											<h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
+											<div class="price">
+												<ins>$80</ins>
+											</div>
+											<a href="#" class="btn btn-outline-primary"
+												>Add To Cart</a
+											>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+

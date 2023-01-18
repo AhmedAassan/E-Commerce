@@ -1,0 +1,49 @@
+﻿@model Ecommerce.BL.Models.CustomerVM
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form asp-controller="Customer" asp-action="Create">
+
+	<div class="form-group row">
+		<label class="col-sm-12 col-md-2 col-form-label">Name</label>
+		<div class="col-sm-12 col-md-10">
+			<input asp-for="Name" class="form-control" type="text" placeholder="The Customer Name">
+			<span asp-validation-for="Name" class="text-white bg-danger"></span>
+		</div>
+	</div>
+
+
+
+	<div class="form-group row">
+		<label class="col-sm-12 col-md-2 col-form-label">Phone</label>
+		<div class="col-sm-12 col-md-10">
+			<input class="form-control" asp-for="Phone"  type="text">
+			<span asp-validation-for="Phone" class="text-white bg-danger"></span>
+		</div>
+	</div>
+	
+	<div class="form-group row">
+		<label class="col-sm-12 col-md-2 col-form-label">Address</label>
+		<div class="col-sm-12 col-md-10">
+			<input asp-for="Address" class="form-control" type="text" placeholder="Enter the Size">
+			<span asp-validation-for="Address" class="text-white bg-danger"></span>
+		</div>
+	</div>
+
+
+	
+
+	<center>
+        <input type="submit" value="Create" class="btn btn-primary" />
+        <input type="reset" value="Cancle" class="btn btn-danger" />
+    </center>
+</form>
+							
+
+		@section JqueryValidation{
+			<script src="~/jquery-validation/dist/jquery.validate.js"></script>
+			<script src="~/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+		}
